@@ -1,1 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap');
 
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  animation: fadeIn 1.2s ease;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #ff4b5c;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: #fff0f3;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+  animation: pop 0.6s ease;
+}
+
+#heart {
+  font-size: 40px;
+  color: red;
+  animation: heartbeat 1s infinite;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+#yesButton {
+  background: #ff4b5c;
+  color: white;
+}
+
+#noButton {
+  background: #ccc;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#responseMessage {
+  display: none;
+  font-weight: 500;
+  color: #d6336c;
+}
+
+.gif {
+  width: 120px;
+  margin: 10px auto;
+  display: block;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
