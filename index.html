@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Quieres ser mi San Valentín?</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Para ti, <span id="name">Priyanka</span> 💖</h1>
+
+    <!-- GIF arriba -->
+    <img src="gifs/corazones.gif" class="gif top">
+
+    <div id="lovePoem" class="card">
+  Bajo la luna, una chispa en silencio,<br>
+  Dos corazones unidos en la oscuridad.<br>
+  Las miradas se cruzan, comienza el baile,<br>
+  Una historia de amor que el alma quiere contar.<br><br>
+
+  Susurros suaves, risas al pasar,<br>
+  Un lienzo en blanco donde el amor va a volar.<br>
+  De la mano, un camino al empezar,<br>
+  En el brillo de un nuevo amor, tú y yo sin separar.
+</div>
+
+    <div id="heart">❤</div>
+
+    <div id="question" class="card">
+      <p>¿Quieres ser mi San Valentín? 🥰</p>
+      <button onclick="displayMessage('yes')" id="yesButton">Sí 💘</button>
+      <button onclick="displayMessage('no')" id="noButton">No 🙃</button>
+    </div>
+
+    <div id="responseMessage" class="card"></div>
+
+    <!-- GIF abajo -->
+    <img src="gifs/beso.gif" class="gif bottom" id="bottomGif">
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
